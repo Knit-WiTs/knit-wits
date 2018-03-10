@@ -1,0 +1,34 @@
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input.search {
+    display: inline-block;
+    width: 80%;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background-image: url(/../assets/mic-icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+input.field::before {
+    content: url(/../assets/search-icon.png);
+}
+
+.search-submit {
+    width: 15%;
+    padding: 10px;
+    background-color: #82b5a7;
+    border: 1px solid #547a6f;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+}
+
+.search-submit:hover {
+    background: darken(#82b5a7, 20%);
+}
+    
