@@ -1,17 +1,13 @@
 class appController {
-    constructor() {
-      this.name = 'app';
-      this.page = 'search';
+	constructor() {
+		this.name = 'app';
+		this.page = 'search';
 
-      this.switchPage = page => {
-          this.page = page;
-      }
-    }
-
-    $onInit() {
-        console.log(this.page);
-    }
-  }
+		this.switchPage = page => {
+			this.page = page;
+		};
+	}
+}
 
 
-  export default appController;
+export default appController;

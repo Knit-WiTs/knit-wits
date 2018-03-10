@@ -1,7 +1,13 @@
-class incidentFormController {
-    constructor() {
-      this.name = 'incidentForm';
-    }
-  }
+import restangular from 'restangular';
 
-  export default incidentFormController;
+class incidentFormController {
+	constructor() {
+		this.name = 'incidentForm';
+	}
+
+	submit() {
+		restangular.one('/incident').post();
+	}
+}
+
+export default incidentFormController;

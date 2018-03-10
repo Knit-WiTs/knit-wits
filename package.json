@@ -65,6 +65,7 @@
     "node-libs-browser": "1.0.0",
     "phantomjs-prebuilt": "2.1.7",
     "raw-loader": "0.5.1",
+    "restangular": "^1.6.1",
     "run-sequence": "1.2.1",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
