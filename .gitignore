@@ -7,3 +7,4 @@ node_modules
 client/bundle.js
 client/bundle.js.map
 .idea
+dist
