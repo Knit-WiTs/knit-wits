@@ -1,12 +1,23 @@
-import restangular from 'restangular';
-
 class incidentFormController {
-	constructor() {
+	constructor(Restangular) {
 		this.name = 'incidentForm';
+		this.Restangular = Restangular;
+		this.model = {};
+	}
+
+	static get $inject() {
+		return ['Restangular'];
 	}
 
 	submit() {
-		restangular.one('/incident').post();
+		this.Restangular.all('/incident').post({
+			message: this.model.message,
+			location: this.model.location,
+		});
+	}
+
+	viewList() {
+		this.onSwitchPage('incident-list');
 	}
 }
 
