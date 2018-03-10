@@ -19,6 +19,7 @@
     "bootstrap-css-only": "3.3.6",
     "dotenv": "^5.0.1",
     "esendex": "^0.1.8",
+    "dotenv": "^5.0.1",
     "express": "^4.16.2",
     "lodash": "4.13.1",
     "mongoose": "^5.0.9",
