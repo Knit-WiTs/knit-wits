@@ -1,12 +1,15 @@
 {
   "name": "knit-wits",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "webpack && webpack-dev-server --content-base client/ --hot --inline",
+    "start": "node server.js",
     "serve": "webpack && webpack-dev-server --content-base client/ --hot --inline",
     "create Component": "gen comp",
-    "build": "webpack -p --config ./webpack.config.js --progress"
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+  },
+  "engines": {
+    "node": "9.5.x"
   },
   "author": "Knit-WiTs",
   "license": "MIT",
