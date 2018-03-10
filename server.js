@@ -5,7 +5,7 @@ require('dotenv').config();
 const express = require('express'),
 	passport = require('passport');
 
-const config = require('./config'),
+const config = require('./lib/config'),
 	dbConn = require('./lib/db');
 
 const app = express();
