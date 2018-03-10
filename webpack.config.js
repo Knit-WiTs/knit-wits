@@ -22,8 +22,6 @@ if (isDev) {
         test: /\.(png|jpg)$/,
         loader: 'file?name=img/[name].[ext]' // inline base64 URLs for <=10kb images, direct URLs for the rest
       },{
-        test: /\.scss$/,loader: 'style!css!sass'
-      }, {
         test: /\.css$/, loader: 'style!css'
       }, {
         test: /\.js$/,
@@ -72,8 +70,6 @@ if (isDev) {
       }, {
         test: /\.(png|jpg)$/,
         loader: 'file?name=img/[name].[ext]' // inline base64 URLs for <=10kb images, direct URLs for the rest
-      },{
-        test: /\.scss$/,loader: 'style!css!sass'
       }, {
         test: /\.css$/, loader: 'style!css'
       }, {
