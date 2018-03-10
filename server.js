@@ -27,7 +27,7 @@ dbConn.then(db => {
 	passport.use(new GoogleStrategy({
 		clientID: process.env.CLIENT_ID,
 		clientSecret: process.env.CLIENT_SECRET,
-		callbackURL: 'http://localhost:3000/auth/google/callback',
+		callbackURL: `${ config.host }/auth/google/callback`,
 		passReqToCallback: true,
 	}, async (request, accessToken, refreshToken, profile, done) => {
 		const user = await db.model('User').findByIdAndUpdate(profile.id, profile, { new: true, upsert: true });
@@ -42,4 +42,4 @@ dbConn.then(db => {
 const port = process.env.PORT || 3000;
 
 app.listen(port);
-console.log(`App is listening on ${ config.host }:${ port }`); // eslint-disable-line no-console
+console.log(`App is listening on ${ config.host }`); // eslint-disable-line no-console
