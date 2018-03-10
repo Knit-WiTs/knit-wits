@@ -1,0 +1,11 @@
+<div>
+	<button ng-click="$ctrl.showMenu = !$ctrl.showMenu" ng-if="$ctrl.currentPage !== 'search'">Menu</button>
+	<img ng-if="$ctrl.user" ng-src="{{ $ctrl.user.photo }}" class="avatar" />
+	<a href="/login" ng-if="!$ctrl.user && $ctrl.loaded" class="login">Login</a>
+	<ul ng-if="$ctrl.showMenu && $ctrl.currentPage !== 'search'">
+		<li><button ng-click="$ctrl.go('incident-form')">Log Incident</button></li>
+		<li><button ng-click="$ctrl.go('incident-list')">My Log</button></li>
+		<li><a href="/logout">Log out</a></li>
+		<li><button ng-click="$ctrl.go('search')">Exit</button></li>
+	</ul>
+</div>

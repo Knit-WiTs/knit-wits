@@ -9,6 +9,6 @@ const incidentListComponent = {
 	},
 	template,
 	controller,
-	controllerAs: 'incidentListController',
+	controllerAs: '$ctrl',
 };
 export default incidentListComponent;
