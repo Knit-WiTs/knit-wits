@@ -1,0 +1,39 @@
+h1 {
+
+}
+
+form.incident-form {
+    
+}
+
+textarea.incident {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #8e8e93;
+}
+
+input.field-incident {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #8e8e93;
+    color: #8e8e93;
+}
+
+.keep-safe,
+.report {
+    display: block;
+    clear: both;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.keep-safe {
+    background: #82726A;
+    border: 3px solid #624B2F;
+}
+
+.report {
+    background: #DE8080;
+    border: 1px solid #AA7472;
+}
