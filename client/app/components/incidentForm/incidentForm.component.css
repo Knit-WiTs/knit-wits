@@ -1,9 +1,12 @@
 h1 {
+    font-size: 3rem;
 
 }
 
-form.incident-form {
-    
+form.log-incident {    
+}
+
+button.archive {
 }
 
 textarea.incident {
@@ -12,11 +15,16 @@ textarea.incident {
     border: 1px solid #8e8e93;
 }
 
+p.incident-label {
+    margin-top: 20px;
+}
+
 input.field-incident {
     width: 100%;
     border-radius: 5px;
     border: 1px solid #8e8e93;
     color: #8e8e93;
+    min-height: 40px;
 }
 
 .keep-safe,
@@ -26,14 +34,42 @@ input.field-incident {
     width: 100%;
     border-radius: 5px;
     color: #fff;
+    height: 40px;
+    font-weight: 600;
 }
 
 .keep-safe {
+    margin-top: 30px;
     background: #82726A;
     border: 3px solid #624B2F;
+    margin-bottom: 30px;
+    background-image: url('/../assets/padlock-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.keep-safe:hover {
+    background: #624B2F;
+    background-image: url('/../assets/padlock-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 }
 
 .report {
     background: #DE8080;
-    border: 1px solid #AA7472;
+    border: 3px solid #AA7472;
+    background-image: url('/../assets/report-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.report:hover {
+    background: #AA7472;
+    background-image: url('/../assets/report-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 }
