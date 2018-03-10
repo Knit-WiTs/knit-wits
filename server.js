@@ -29,7 +29,7 @@ dbConn.then(db => {
 		callbackURL: 'http://localhost:3000/auth/google/callback',
 		passReqToCallback: true,
 	}, async (request, accessToken, refreshToken, profile, done) => {
-		const user = await db.model('User').findByIdAndUpdate(profile.id, profile, { new: true, upsert: true })
+		const user = await db.model('User').findByIdAndUpdate(profile.id, profile, { new: true, upsert: true });
 		done(null, user);
 	}));
 
