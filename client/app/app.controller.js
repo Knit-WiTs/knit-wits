@@ -7,7 +7,7 @@ class appController {
 			this.page = page;
 		};
 
-		Restangular.setBaseUrl('https://knit-wits.herokuapp.com/api');
+		Restangular.setBaseUrl('/api');
 	}
 
 	static get $inject() {

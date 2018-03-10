@@ -39,6 +39,8 @@ connect.then(db => {
 	app.use(passport.initialize());
 	app.use(passport.session());
 
+	app.use('/assets', express.static('client/assets'));
+
 	passport.use(new GoogleStrategy({
 		clientID: process.env.CLIENT_ID,
 		clientSecret: process.env.CLIENT_SECRET,
