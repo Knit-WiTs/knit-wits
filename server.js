@@ -5,7 +5,8 @@ require('dotenv').config();
 const express = require('express'),
 	passport = require('passport');
 
-const dbConn = require('./lib/db');
+const config = require('./config'),
+	dbConn = require('./lib/db');
 
 const app = express();
 
@@ -38,7 +39,7 @@ dbConn.then(db => {
 	require('./lib/app')(app, db);
 });
 
-const port = process.env.NODE_ENV || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port);
-console.log(`App is listening on http://localhost:${ port }`); // eslint-disable-line no-console
+console.log(`App is listening on ${ config.host }:${ port }`); // eslint-disable-line no-console
