@@ -1,0 +1,10 @@
+form {
+    .form--input {
+        border: 1px solid #000;
+        background: #fff;
+    }
+
+    .form--submit {
+        background: blue;
+    }
+}
