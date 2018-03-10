@@ -1,1 +1,2 @@
-<search-box></search-box>
+<search-box ng-if="$ctrl.page === 'search'" on-switch-page="$ctrl.switchPage"></search-box>
+<incident-form ng-if="$ctrl.page === 'incident-form'" on-switch-page="$ctrl.switchPage"></incident-form>

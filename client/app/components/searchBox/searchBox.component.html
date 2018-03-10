@@ -1,6 +1,4 @@
-<h1> searchBox works! </h1>
-
-<form class="form--searchbox">
-    <input class="form__input" type="text">
-    <input class="form__submit--disabled" type"button">
+<form class="form searchbox" ng-submit="$ctrl.search()">
+    <input class="field search" type="text" placeholder="Type something" ng-model="$ctrl.text">
+    <button class="submit search-submit" type="submit" ng-click="$ctrl.search()">Go</button>
 </form>
