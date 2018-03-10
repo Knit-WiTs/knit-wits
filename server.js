@@ -33,6 +33,8 @@ dbConn.then(db => {
 		done(null, user);
 	}));
 
+	require('./lib/esendex')(app, db);
+
 	require('./lib/app')(app, db);
 });
 
