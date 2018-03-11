@@ -11,10 +11,33 @@ navigation button {
     min-height: 50px;
     background: none;
     border: none;
-    content: \f0c9;
     color: #547A6F;
 }
 
 navigation img {
     float: left;
+}
+
+navigation ul {
+    list-style-type: none;
+    clear: both;
+    padding: 0;
+    height: 800px;
+}
+
+navigation li {
+    width: 100%;
+    float: left;
+}
+navigation .menu-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-top: 2px solid #547A6F;
+    font-size: 2rem;
+}
+
+navigation a {
+    padding: 15px 0;
+    text-decoration: none;
 }
