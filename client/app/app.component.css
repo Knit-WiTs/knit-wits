@@ -6,6 +6,10 @@
     font-size: 1.7rem;
  }
 
+ p.title {
+     font-size:2rem;
+ }
+ 
  h1 {
      width: 80%;
      margin: auto;
@@ -28,6 +32,12 @@
  app>div.search {
     background-image: url(/../assets/yarn-bg.jpg);
     background-size: 1350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ app>div.incident-form {
+    background: #C4E2DA;
  }
 
  html,

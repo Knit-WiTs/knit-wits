@@ -2,11 +2,6 @@ h1 {
     font-size: 3rem;
 }
 
-form.log-incident {
-}
-
-button.archive {
-}
 
 textarea.incident {
     width: 100%;
@@ -16,6 +11,7 @@ textarea.incident {
 
 p.incident-label {
     margin-top: 20px;
+    font-size: 2rem;
 }
 
 input.field-incident {

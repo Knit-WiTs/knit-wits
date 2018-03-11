@@ -23,6 +23,7 @@ input.search {
 
 search-box form {
     font-size: 1.25em;
+    transform: translateY(40%);
 }
 
 input.field::before {
@@ -41,4 +42,13 @@ input.field::before {
 
 .search-submit:hover {
     background: darken(#82b5a7, 20%);
+}
+
+img.knit-wits {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 40px 80px;
+    margin: 0 auto;
+    text-align: center;
 }

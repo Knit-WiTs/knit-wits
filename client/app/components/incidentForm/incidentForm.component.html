@@ -1,10 +1,10 @@
 <h1>Log an incident</h1>
 
 <form class="form log-incident">
-    <p class="incident-label">What happened?</p>
+    <p class="incident-label title">What happened?</p>
     <textarea class="incident" rows="10" col="40" ng-model="$ctrl.model.message"></textarea>
 
-    <p class="incident-label">Where?</p>
+    <p class="incident-label title">Where?</p>
     <input class="field-incident" type="text" placeholder="Nottingham Council House" ng-model="$ctrl.model.location">
 
     <button class="submit keep-safe" type="button" ng-click="$ctrl.submit()">Keep Safe</button>

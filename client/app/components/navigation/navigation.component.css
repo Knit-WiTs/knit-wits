@@ -22,6 +22,7 @@ navigation ul {
     list-style-type: none;
     clear: both;
     padding: 0;
+    height: 800px;
 }
 
 navigation li {
