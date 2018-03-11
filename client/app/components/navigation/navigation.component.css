@@ -4,6 +4,25 @@ navigation {
     clear: both;
     float: left;
     width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.exit {
+    float: left;
+}
+
+.menu-button {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
 }
 
 navigation button {
@@ -33,8 +52,31 @@ navigation .menu-item {
     display: block;
     width: 100%;
     text-align: left;
-    border-top: 2px solid #547A6F;
+    border-bottom: 1px solid #547A6F;
     font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+navigation h1 {
+    clear: none;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 1px solid #547A6F;
+    width: 100%;
+}
+
+.hamburger {
+    margin-top: 10px;
+}
+
+.menu-item img {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 2px;
 }
 
 navigation a {
