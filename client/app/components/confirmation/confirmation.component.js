@@ -4,7 +4,9 @@ import template from './confirmation.component.html';
 
 const confirmationComponent = {
 	restrict: 'E',
-	bindings: {},
+	bindings: {
+		onSwitchPage: '<',
+	},
 	template,
 	controller,
 	controllerAs: '$ctrl',

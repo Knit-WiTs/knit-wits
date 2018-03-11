@@ -1,18 +1,25 @@
 * {
-    font-family: 'Open Sans';
+    font-family: 'Nunito', sans-serif;
  }
 
  p {
     font-size: 1.7rem;
  }
 
+ h1 {
+     width: 80%;
+     margin: auto;
+     clear: both;
+     padding: 20px 0 10px 0;
+     color: rgba(0,0,0,0.6);
+ }
+
  input {
     color: #8e8e93;
  }
 
- app>div.search {
-    background-image: url(/../assets/yarn-bg.jpg);
-    background-size: 1350px;
+ textarea, input {
+     padding: 10px;
  }
 
  html,
@@ -22,4 +29,9 @@
      height: 100%;
      width: 100%;
      display: block;
+     background: #C4E2DA;
+ }
+
+ body {
+     margin-top: -10px;
  }

@@ -1,7 +1,8 @@
 <div ng-class="$ctrl.page">
+	<search-box ng-class="$ctrl.page !== 'search' ? 'revealed' : 'nothing'" on-switch-page="$ctrl.switchPage"></search-box>
 	<navigation current-page="$ctrl.page" on-switch-page="$ctrl.switchPage"></navigation>
-	<search-box ng-if="$ctrl.page === 'search'" on-switch-page="$ctrl.switchPage"></search-box>
 	<incident-form ng-if="$ctrl.page === 'incident-form'" on-switch-page="$ctrl.switchPage"></incident-form>
 	<incident-list ng-if="$ctrl.page === 'incident-list'" on-switch-page="$ctrl.switchPage"></incident-list>
 	<confirmation ng-if="$ctrl.page === 'confirmation'" on-switch-page="$ctrl.switchPage"></confirmation>
+	<password ng-if="$ctrl.page === 'password'" on-switch-page="$ctrl.switchPage"></password>
 </div>
