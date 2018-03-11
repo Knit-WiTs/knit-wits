@@ -65,7 +65,7 @@ connect.then(db => {
 		req.session.destroy();
 		req.logout();
 		res.redirect('/');
-	})
+	});
 
 	app.get('/auth/google/callback',
 		passport.authenticate('google', { successRedirect: '/', failureRedirect: '/' })
