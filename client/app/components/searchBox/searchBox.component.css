@@ -46,6 +46,7 @@ input.search {
 
 search-box form {
     font-size: 1.25em;
+    transform: translateY(40%);
 }
 
 input.field::before {

@@ -7,7 +7,7 @@ class searchBoxController {
 	}
 
 	search() {
-		if (this.text === this.user.passphrase) {
+		if (this.user && this.text === this.user.passphrase) {
 			this.text = '';
 			this.onSwitchPage('incident-form');
 		} else {

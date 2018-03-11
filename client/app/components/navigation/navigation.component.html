@@ -1,11 +1,14 @@
 <div>
-	<button ng-click="$ctrl.showMenu = !$ctrl.showMenu" ng-if="$ctrl.currentPage !== 'search'">Menu</button>
-	<img ng-if="$ctrl.user" ng-src="{{ $ctrl.user.photo }}" class="avatar" />
-	<a href="/login" ng-if="!$ctrl.user && $ctrl.loaded" class="login">Login</a>
+	<button ng-click="$ctrl.showMenu = !$ctrl.showMenu" ng-if="$ctrl.currentPage !== 'search'"><i class="fa fa-2x hamburger" ng-class="$ctrl.showMenu ? 'fa-close' : 'fa-bars'"></i></button>
+	<a ng-click="$ctrl.go('search')" class="menu-button exit" ng-if="$ctrl.user && $ctrl.currentPage !== 'search'">Exit</a>
+	<img ng-src="{{ $ctrl.user.photo }}" class="avatar" ng-if="$ctrl.user && !$ctrl.showMenu && $ctrl.currentPage === 'search'" />
+	<h1 ng-if="$ctrl.currentPage !== 'search'">You be brave</h1>
+	<a href="/login" class="menu-button login" ng-if="!$ctrl.user">Login</a>
 	<ul ng-if="$ctrl.showMenu && $ctrl.currentPage !== 'search'">
-		<li><button ng-click="$ctrl.go('incident-form')">Log Incident</button></li>
-		<li><button ng-click="$ctrl.go('incident-list')">My Log</button></li>
-		<li><a href="/logout">Log out</a></li>
-		<li><button ng-click="$ctrl.go('search')">Exit</button></li>
+		<li><button class="menu-item" ng-click="$ctrl.go('incident-form')">Log Incident</button></li>
+		<li><button class="menu-item" ng-click="$ctrl.go('incident-list')">My Log</button></li>
+		<li><button class="menu-item" ng-click="$ctrl.go('friend')">Choose trusted friend</button></li>
+		<li><a class="menu-item" href="/logout"><img ng-if="$ctrl.user" ng-src="{{ $ctrl.user.photo }}" class="avatar" /> Log out</a></li>
+		<li><button class="menu-item" ng-click="$ctrl.go('search')">Exit</button></li>
 	</ul>
 </div>

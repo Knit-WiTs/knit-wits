@@ -1,0 +1,19 @@
+<div ng-if="!$ctrl.confirm">
+	<h1>Choose a trusted friend</h1>
+	<p>
+	<b>You can choose a trusted friend. This person can request access to your incident logs, in a case where they are concerned for your safety.</p>
+	<p>You can cancel their access, in the first 48 hours of the request</p>
+	<p></p>
+	<p>Trusted friends phone number:</p>
+	<input ng-model="$ctrl.trustedfiend" type="text">
+	<p>
+	<p>Confirm trusted friends phone number:</p>
+	<input ng-model="$ctrl.trustedfiend2" type="text">
+	<button ng-click="$ctrl.set()" ng-disabled="!$ctrl.trustedfiend || $ctrl.trustedfiend !== $ctrl.trustedfiend2">Choose trusted friend</button>
+</div>
+
+<div ng-if="$ctrl.confirm">
+	<h1>Trusted friend saved</h1>
+	<p>Your trusted friend will receive a text message to confirm they are your trusted friend.</p>
+	<button ng-click="$ctrl.onSwitchPage('incident-form')">Log another incident</button>
+</div>
