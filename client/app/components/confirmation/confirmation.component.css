@@ -1,0 +1,31 @@
+confirmation {
+	width: 80%;
+	margin: 0 10%;
+	display: block;
+	line-height: 1.5em;
+	font-size: 1.25em;
+}
+
+confirmation h1 {
+	margin: 0;
+}
+
+confirmation ul {
+	padding-left: 1.5em;
+}
+
+confirmation button {
+	margin-top: 30px;
+	background: #6cb043;
+	border: 2px solid #48752d;
+	margin-bottom: 30px;
+	color: #fff;
+	display: block;
+	border-radius: 5px;
+	width: 100%;
+	padding: 3px;
+}
+
+confirmation p {
+	margin: 20px 0;
+}

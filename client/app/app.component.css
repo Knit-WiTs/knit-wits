@@ -11,6 +11,7 @@
      margin: auto;
      clear: both;
      padding: 20px 0 10px 0;
+     color: rgba(0,0,0,0.6);
  }
 
  input {
@@ -21,15 +22,6 @@
      padding: 10px;
  }
 
- app>div {
-     background: #C4E2DA;
- }
-
- app>div.search {
-    background-image: url(/../assets/yarn-bg.jpg);
-    background-size: 1350px;
- }
-
  html,
  body,
  app,
@@ -37,4 +29,9 @@
      height: 100%;
      width: 100%;
      display: block;
+     background: #C4E2DA;
+ }
+
+ body {
+     margin-top: -10px;
  }
