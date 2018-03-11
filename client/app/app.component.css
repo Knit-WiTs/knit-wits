@@ -6,13 +6,13 @@
     font-size: 1.7rem;
  }
 
- iput {
+ input {
     color: #8e8e93;
  }
 
  app>div.search {
     background-image: url(/../assets/yarn-bg.jpg);
-    background-size: cover;
+    background-size: 1350px;
  }
 
  html,

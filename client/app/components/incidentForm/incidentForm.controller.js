@@ -13,7 +13,7 @@ class incidentFormController {
 		this.Restangular.all('/incident').post({
 			message: this.model.message,
 			location: this.model.location,
-		});
+		}).then(() => this.onSwitchPage('confirmation'));
 	}
 
 	viewList() {

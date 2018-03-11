@@ -1,7 +1,7 @@
 <h1> incidentList works! </h1>
 
 <div ng-repeat="incident in $ctrl.incidents">
-	<h3>{{ incident.created_at | date }}</h3>
-	<p>{{ incident.message }}</p>
-	<p>{{ incident.location }}</p>
+	<h3>Date logged: {{ incident.created_at | date }}</h3>
+	<p><b>Description:</b> {{ incident.message }}</p>
+	<p><b>Location:</b> {{ incident.location }}</p>
 </div>

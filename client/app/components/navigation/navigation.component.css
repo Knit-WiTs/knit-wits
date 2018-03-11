@@ -1,0 +1,20 @@
+navigation {
+    display: block;
+    background: #C4E2DA;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+navigation button {
+    float: right;
+    min-height: 50px;
+    background: none;
+    border: none;
+    content: \f0c9;
+    color: #547A6F;
+}
+
+navigation img {
+    float: left;
+}
