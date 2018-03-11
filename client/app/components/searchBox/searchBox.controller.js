@@ -1,6 +1,7 @@
 class searchBoxController {
 	constructor() {
 		this.name = 'searchBox';
+		this.currentTime = new Date();
 	}
 
 	search() {

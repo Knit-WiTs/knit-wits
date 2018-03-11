@@ -3,15 +3,26 @@ form {
     margin: 0 auto;
 }
 
+h1.time {
+    text-align: center;
+    color: #fff;
+    font-size: 7em;
+    width: 100%;
+}
+
 input.search {
     display: inline-block;
-    width: 80%;
+    width: 85%;
     padding: 10px 15px;
     border: 1px solid #000;
     background-image: url(/../assets/mic-icon.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+}
+
+search-box form {
+    font-size: 1.25em;
 }
 
 input.field::before {

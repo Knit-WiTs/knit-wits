@@ -1,13 +1,28 @@
 * {
-    font-family: 'Open Sans';
+    font-family: 'Nunito', sans-serif;
  }
 
  p {
     font-size: 1.7rem;
  }
 
+ h1 {
+     width: 80%;
+     margin: auto;
+     clear: both;
+     padding: 20px 0 10px 0;
+ }
+
  input {
     color: #8e8e93;
+ }
+
+ textarea, input {
+     padding: 10px;
+ }
+
+ app>div {
+     background: #C4E2DA;
  }
 
  app>div.search {
