@@ -66,3 +66,27 @@ input.field::before {
 .search-submit:hover {
     background: darken(#82b5a7, 20%);
 }
+
+.popup {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    top: 30px;
+    left: 10px;
+    right: 10px;
+    bottom: 30px;
+    padding: 15px;
+}
+
+.popup button {
+    margin-top: 30px;
+    background: #6cb043;
+    border: 2px solid #48752d;
+    margin-bottom: 30px;
+    color: #fff;
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3px;
+}
