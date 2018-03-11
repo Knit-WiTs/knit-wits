@@ -4,9 +4,12 @@ import template from './friend.component.html';
 
 const friendComponent = {
 	restrict: 'E',
-	bindings: {},
+	bindings: {
+		onSwitchPage: '<',
+		user: '<',
+	},
 	template,
 	controller,
-	controllerAs: 'friendController',
+	controllerAs: '$ctrl',
 };
 export default friendComponent;
