@@ -1,11 +1,25 @@
 * {
     font-family: 'Open Sans';
  }
- 
+
  p {
     font-size: 1.7rem;
  }
 
  iput {
     color: #8e8e93;
+ }
+
+ app>div.search {
+    background-image: url(/../assets/yarn-bg.jpg);
+    background-size: cover;
+ }
+
+ html,
+ body,
+ app,
+ app>div {
+     height: 100%;
+     width: 100%;
+     display: block;
  }

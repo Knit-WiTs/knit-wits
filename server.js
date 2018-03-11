@@ -13,6 +13,8 @@ const GoogleStrategy = require('passport-google-oauth2').Strategy;
 
 const app = express();
 
+app.use(require('cors')());
+
 const MongoStore = require('connect-mongo')(session);
 
 passport.serializeUser((user, done) => {
@@ -36,6 +38,8 @@ connect.then(db => {
 
 	app.use(passport.initialize());
 	app.use(passport.session());
+
+	app.use('/assets', express.static('client/assets'));
 
 	passport.use(new GoogleStrategy({
 		clientID: process.env.CLIENT_ID,
