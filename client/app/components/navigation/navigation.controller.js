@@ -9,6 +9,10 @@ class navigationController {
 		const self = this;
 
 		this.Restangular.one('user').get().then(user => {
+			if (!user.passphrase) {
+				self.go('password');
+			}
+
 			self.user = user;
 			this.loaded = true;
 		});

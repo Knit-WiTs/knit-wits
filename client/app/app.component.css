@@ -15,6 +15,7 @@
      margin: auto;
      clear: both;
      padding: 20px 0 10px 0;
+     color: rgba(0,0,0,0.6);
  }
 
  input {
@@ -47,4 +48,9 @@
      height: 100%;
      width: 100%;
      display: block;
+     background: #C4E2DA;
+ }
+
+ body {
+     margin-top: -10px;
  }

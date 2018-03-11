@@ -1,7 +1,18 @@
-<h1>Incident List</h1>
+<h1>Incident logs</h1>
 
 <div ng-repeat="incident in $ctrl.incidents">
-	<h3>Date logged: {{ incident.created_at | date }}</h3>
-	<p><b>Description:</b> {{ incident.message }}</p>
-	<p><b>Location:</b> {{ incident.location }}</p>
+	<p>
+		<b>Logged on:</b><br>
+		{{ incident.created_at | date:"d MMMM yyyy 'at' HH:mm" }}
+	</p>
+	<p>
+		<b>Location</b>
+		<br>{{ incident.location }}
+		<i ng-if="!incident.location">None provided</i>
+	</p><p>
+		<b>Description</b>
+		<br>{{ incident.message }}
+		<i ng-if="!incident.message">None provided</i>
+	</p>
+	<hr />
 </div>

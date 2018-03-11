@@ -1,0 +1,13 @@
+hr {
+	margin: 30px;
+	border-color: #000;
+}
+
+incident-list > div {
+	width: 80%;
+	margin: auto;
+}
+
+p {
+	margin: 15px 0;
+}

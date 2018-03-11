@@ -2,5 +2,13 @@
     <h1 class="time">{{ $ctrl.currentTime | date:'HH:mm' }}</h1>
     <input class="field search" type="text" placeholder="Type something" ng-model="$ctrl.text"><button class="submit search-submit" type="submit" ng-click="$ctrl.search()">Go</button>
 </form>
+<img src="/../assets/knit-wits.png" class="knit-wits">
+<div class="popup" ng-if="$ctrl.showMsg">
+    <p>This is your discrete homepage to help you privately record harrassment.</p>
+    <p>Entering your passphrase into the search box, goes to the reporting screen, ensuring only you can access it.</p>
+    <p>Anything else will return a Google search</p>
+    <p>Stay safe. If in immediate danger please call 999.</p>
+    <button ng-click="$ctrl.dismiss()">Got it!</button>
+</div>
 
 <img class="knit-wits" src="/../assets/knit-wits.png" alt="knit-wits">
