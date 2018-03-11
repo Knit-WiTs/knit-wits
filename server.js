@@ -71,7 +71,9 @@ connect.then(db => {
 		passport.authenticate('google', { successRedirect: '/', failureRedirect: '/' })
 	);
 
-	require('./lib/esendex')(app, db);
+	if (process.env.NODE_ENV === 'production') {
+		require('./lib/esendex')(app, db);
+	}
 
 	require('./lib/app')(app, db);
 });
