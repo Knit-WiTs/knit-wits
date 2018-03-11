@@ -4,7 +4,7 @@ navigation {
     clear: both;
     float: left;
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 100;
 }
 

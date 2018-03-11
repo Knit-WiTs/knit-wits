@@ -9,7 +9,7 @@
  p.title {
      font-size:2rem;
  }
- 
+
  h1 {
      width: 80%;
      margin: auto;
@@ -53,4 +53,8 @@
 
  body {
      margin-top: -10px;
+ }
+
+ .pad {
+     margin-top: 70px;
  }
