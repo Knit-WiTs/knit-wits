@@ -7,6 +7,7 @@ const navigationComponent = {
 	bindings: {
 		onSwitchPage: '<',
 		currentPage: '<',
+		user: '<',
 	},
 	template,
 	controller,

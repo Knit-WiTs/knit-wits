@@ -6,6 +6,7 @@ const searchBoxComponent = {
 	restrict: 'E',
 	bindings: {
 		onSwitchPage: '<',
+		user: '<',
 	},
 	template,
 	controller,

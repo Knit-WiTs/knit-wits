@@ -8,6 +8,24 @@ class appController {
 		};
 
 		Restangular.setBaseUrl('/api');
+
+		this.Restangular = Restangular;
+	}
+
+	$onInit() {
+		this.Restangular.one('user').get().then(user => {
+			if (!user.passphrase) {
+				this.go('password');
+			}
+
+			this.user = user;
+			this.loaded = true;
+		});
+	}
+
+	go(page) {
+		this.page = page;
+		this.showMenu = false;
 	}
 
 	static get $inject() {

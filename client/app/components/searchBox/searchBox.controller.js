@@ -7,7 +7,7 @@ class searchBoxController {
 	}
 
 	search() {
-		if (this.text === 'easter egg') {
+		if (this.text === this.user.passphrase) {
 			this.text = '';
 			this.onSwitchPage('incident-form');
 		} else {
